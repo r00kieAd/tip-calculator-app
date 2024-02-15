@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" href="images/tip.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="main-container-grid">
+            <img id="logo" src="images/logo.svg" alt="">
+            <div id="main">
+                <div id="inputs">
+                    <div id="bill-input" class="input-items">
+                        <label for="bill">Bill</label><br>
+                        <div class="input-container">
+                            <p>$</p>
+                            <input class="input-x" type="text" name="bill" id="bill" value="" placeholder="0">
+                        </div>
+                    </div>
+                    <div id="tip-choices" class="input-items">
+                        <label for="custom-tip">Select Tip%</label><br>
+                        <div id="options">
+                            <button class="option">5%</button>
+                            <button class="option">10%</button>
+                            <button class="option">15%</button>
+                            <button class="option">25%</button>
+                            <button class="option">50%</button>
+                            <input class="option" type="text" id="custom-tip" placeholder="CUSTOM">
+                        </div>
+                    </div>
+                    <div class="input-items">
+                        <label for="num-of-people">Number of People</label><br>
+                        <div class="input-container">
+                            <p>person-icon</p>
+                            <input class="input-x" type="text" name="num-of-people" id="num-of-people" value=""
+                                placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div id="right-container">
+                    <div id="right-sub-container">
+                        <div class="tip-values">
+                            <div class="tip-legends">
+                                <p class="legends">Tip Amount</p>
+                                <p class="legends">/&nbsp;person</p>
+                            </div>
+                            <div class="tip-amount">$0.00</div>
+                        </div>
+                        <div class="tip-values">
+                            <div class="tip-legends">
+                                <p class="legends">Total</p>
+                                <p class="legends">/&nbsp;person</p>
+                            </div>
+                            <div class="tip-amount">$0.00</div>
+                        </div>
+                    </div>
+                    <div id="reset-button">
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

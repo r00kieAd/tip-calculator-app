@@ -1,0 +1,144 @@
+#main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: auto;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-container-grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#logo {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    align-self: center;
+    bottom: 120%;
+}
+
+#main {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#inputs {
+    position: relative;
+    padding: 10px;
+}
+
+#bill-input {
+    position: inherit;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+}
+
+.input-container p {
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    margin-left: 1%;
+}
+
+.input-x {
+    width: 100%;
+    padding: 8px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#tip-choices {
+    position: relative;
+    margin: 30px 0;
+}
+
+#options {
+    position: relative;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 45px 45px;
+    width: 100%;
+    height: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.option {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: large;
+}
+
+#custom-tip {
+    width: auto;
+    height: inherit;
+    padding: 10px;
+}
+
+#right-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    border: 1px solid red;
+    padding: 20px 15px;
+}
+
+#right-sub-container {
+    position: relative;
+    width: auto;
+}
+
+.tip-values {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.tip-legends {
+    position: relative;
+    width: auto;
+}
+
+.legends {
+    margin: 0;
+}
+
+.tip-amount {
+    font-size: 50px;
+}
+
+#reset-button {
+    position: relative;
+    width: 100%;
+}
+
+#reset {
+    width: 100%;
+    padding: 8px;
+    font-size: medium;
+    margin-bottom: 5px;
+}
