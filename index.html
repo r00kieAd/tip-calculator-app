@@ -20,7 +20,10 @@
             <div id="main">
                 <div id="inputs">
                     <div id="bill-input" class="input-items">
-                        <label for="bill">Bill</label><br>
+                        <div class="labels">
+                            <label for="bill">Bill</label>
+                            <span id="err1">Can't be zero</span>
+                        </div>
                         <div class="input-container">
                             <p><i class="fa-solid fa-dollar-sign"></i></p>
                             <input class="input-x" type="number" name="bill" id="bill" value="" placeholder="0">
@@ -34,11 +37,14 @@
                             <button class="option optbutt">15%</button>
                             <button class="option optbutt">20%</button>
                             <button class="option optbutt">25%</button>
-                            <input class="option" type="number" id="custom-tip" placeholder="CUSTOM">
+                            <input class="option" type="number" id="custom-tip" value="" placeholder="CUSTOM">
                         </div>
                     </div>
-                    <div class="input-items">
-                        <label for="num-of-people">Number of People</label><br>
+                    <div id="people-input" class="input-items">
+                        <div class="labels">
+                            <label for="num-of-people">Number of People</label>
+                            <span id="err2">Can't be zero</span>
+                        </div>
                         <div class="input-container">
                             <p><i class="fa-solid fa-user"></i></p>
                             <input class="input-x" type="number" name="num-of-people" id="num-of-people" value=""
@@ -53,23 +59,26 @@
                                 <p class="legends amt">Tip Amount</p>
                                 <p class="legends per">/&nbsp;person</p>
                             </div>
-                            <div class="tip-amount">$0.00</div>
+                            <div class="tip-amount tip0">$0.00</div>
                         </div>
                         <div class="tip-values">
                             <div class="tip-legends">
                                 <p class="legends amt">Total</p>
                                 <p class="legends per">/&nbsp;person</p>
                             </div>
-                            <div class="tip-amount">$0.00</div>
+                            <div class="tip-amount tip1">$0.00</div>
                         </div>
                     </div>
                     <div id="reset-button">
+                        <p class="val"></p>
                         <button class="reset" disabled="disabled">Reset</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

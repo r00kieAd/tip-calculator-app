@@ -66,6 +66,18 @@ body {
     position: inherit;
 }
 
+.labels {
+    position: relative;
+    display: inline;
+}
+
+.labels span {
+    display: none;
+    float: right;
+    margin-right: 2%;
+    color: #ff5959;
+}
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -161,12 +173,22 @@ input[type=number] {
     text-align: center;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
+input:focus, #custom-tip:focus {
+    cursor:text;
+    outline: none;
+    border-color: var(--strongCyan);
+}
+
 #right-container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 18rem;
+    width: 18.5rem;
     padding: 25px 20px;
     border: 1px solid var(--veryDarkCyan);
     border-radius: 15px;
@@ -211,6 +233,27 @@ input[type=number] {
     font-size: 45px;
     font-weight: 700;
     color: var(--strongCyan);
+    text-align: right;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* this will be implemented in javascript, threshold
+length is 8 */
+.tip-amount:hover {
+    cursor: pointer;
+    overflow: visible;
+}
+
+.val {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--strongCyan);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #reset-button {
