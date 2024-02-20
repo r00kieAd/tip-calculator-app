@@ -14,7 +14,7 @@ body {
 
 #main-container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
@@ -166,6 +166,9 @@ input[type=number] {
     padding: 10px;
     text-align: right;
     border: 1px solid transparent;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    color: var(--veryDarkCyan);
     background-color: var(--veryLightGrayishCyan);
 }
 
@@ -240,14 +243,12 @@ input:focus, #custom-tip:focus {
     text-overflow: ellipsis;
 }
 
-/* this will be implemented in javascript, threshold
-length is 8 */
 .tip-amount:hover {
     cursor: pointer;
-    overflow: visible;
 }
 
 .val {
+    display: none;
     font-size: 25px;
     font-weight: 700;
     color: var(--strongCyan);
@@ -277,5 +278,47 @@ length is 8 */
 
 .enabled-reset {
     filter: brightness(1);
+}
+
+.enabled-reset:hover {
+    border-color: var(--grayishCyan);
+    background-color: var(--lightGrayishCyan);
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 750px) {
+    #main-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: fit-content;
+        /* height: auto;
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: normal; */
+    }
+
+    #logo {
+        position: relative;
+        width: 20%;
+        bottom: 20%;
+        margin-bottom: 10%;
+    }
+    
+    #main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    #inputs {
+        width: fit-content;
+    }
+    
 }
