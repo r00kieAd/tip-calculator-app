@@ -31,7 +31,7 @@
 
 ## :dart: About ##
 
-This is a Tip Calculator Webapp, designed to calculate tip amount for a given bill and number of people. The results will be upto 2 decimal places. Has a simple layout yet interactive on many places. For eg. if the amount is too large to be displayed, it'll be ellipsed and full amount will be shown below the total when clicked on it. Certain error handling has been done as well and only numeric inputs are allowed all over. This project was provided by frontend mentor and coded/developed by Adhyatma Dwivedi.
+This is a Tip Calculator Webapp, designed to calculate tip amount for a given bill and number of people. The results will be upto 2 decimal places. Has a simple layout yet interactive on many places. For eg. if the amount is too large to be displayed, it'll be ellipsed and full amount will be shown below the total when clicked on it. Certain error handling has been done as well and only numeric inputs are allowed all over. The layout is responsive and structured for both desktop and mobile screns. This project was provided by frontend mentor and coded/developed by Adhyatma Dwivedi.
 
 ## :sparkles: Features ##
 
