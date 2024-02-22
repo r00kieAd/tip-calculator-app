@@ -180,8 +180,9 @@ input:hover {
     cursor: pointer;
 }
 
-input:focus, #custom-tip:focus {
-    cursor:text;
+input:focus,
+#custom-tip:focus {
+    cursor: text;
     outline: none;
     border-color: var(--strongCyan);
 }
@@ -293,11 +294,12 @@ input:focus, #custom-tip:focus {
         top: 0;
         left: 0;
         transform: none;
-        width: fit-content;
-        /* height: auto;
-        font-family: "Space Mono", monospace;
-        font-weight: 400;
-        font-style: normal; */
+        width: 100%;
+    }
+
+    #main-container-grid {
+        justify-content: center;
+        padding: 0;
     }
 
     #logo {
@@ -306,19 +308,46 @@ input:focus, #custom-tip:focus {
         bottom: 20%;
         margin-bottom: 10%;
     }
-    
+
     #main {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content:center;
-        width: 100%;
+        justify-content: center;
+        width: auto;
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
     }
 
     #inputs {
-        width: fit-content;
+        width: auto;
+    }
+
+    #right-container {
+        margin-top: 5%;
+        width: auto;
+        height: 18rem;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+    #options {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 45px 45px 45px;
+    }
+
+    .tip-legends {
+        font-size: 8px;
     }
     
+    .amt {
+        font-size: 10px;
+    }
+
+    .tip-amount {
+        font-size: 40px;
+        font-weight: 700;
+    }
 }

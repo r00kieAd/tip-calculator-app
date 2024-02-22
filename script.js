@@ -44,7 +44,7 @@ $('.reset').click(
         $('.reset').removeClass('enabled-reset');
         $('#bill').val('');
         $('#num-of-people').val('');
-        $('#custom-input').val('');
+        $('#custom-tip').val('');
         $('.tip0').text('$0.00');
         $('.tip1').text('$0.00');
     }
